@@ -1,0 +1,105 @@
+/* selecto:seudoclase{propiedad:valor}*/
+a:hover {
+  background-color: black;
+  color: white;
+}
+/*no ha sido visitado el link*/
+a:link {
+  background-color: yellow;
+  color: black;
+}
+/*despues de visitar el link*/
+a:visited {
+  background-color: red;
+  color: white;
+}
+a:active {
+  color: black;
+  background-color: pink;
+}
+h1 {
+  background-color: blueviolet;
+  color: white;
+  width: 50%;
+  height: 70px;
+  margin: 10px 5px 0px 20px;
+  padding: 14px 18px;
+  border-bottom: 10px solid black;
+}
+/*Selector de etiqueta*/
+article {
+  min-height: 500px;
+  background-color: black;
+  color: white;
+}
+/*Selector de id*/
+#atributos {
+  background-color: blueviolet;
+}
+#lista {
+  list-style-type: none;
+  padding: 20px;
+}
+#lista li {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  width: 15%;
+  border-bottom: 5px dotted white;
+}
+/*Pseudo Elemento*/
+#lista li:first-letter {
+  background-color: blue;
+  padding: 5px;
+  font-size: xx-large;
+}
+/*Selector de clases*/
+.menu {
+}
+p {
+  background-color: aqua;
+  color: black;
+  padding: 50px;
+}
+/*Pseudo Elemento*/
+p::first-line {
+  background-color: blue;
+  padding: 16px;
+}
+p::after {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  background-color: brown;
+  width: 250px;
+  height: 80px;
+  content: "Hola a Todos ";
+}
+p::before {
+  position: absolute;
+  top: 250px;
+  left: 80px;
+  background-color: blueviolet;
+  width: 100vw;
+  height: 100vh;
+  content: "Soy el Antes";
+  display: none;
+}
+.divs {
+  background-color: lightseagreen;
+}
+#uno {
+  background-color: crimson;
+}
+#dos {
+  background-color: dodgerblue;
+}
+#tres {
+  background-color: darkgoldenrod;
+}
+.divClass {
+  margin: 2%;
+  width: 30%;
+  height: 120px;
+  float: left;
+}

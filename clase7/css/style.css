@@ -1,0 +1,98 @@
+/** {
+    box-sizing: border-box;
+  }
+  */
+body {
+  background-color: white;
+  font-size: 30px;
+  margin: 0px;
+  padding: 15px;
+}
+main {
+  font-size: 25px;
+  background-color: blue;
+  border-radius: 30px;
+  padding: 15px;
+  height: content;
+}
+/*medidas absolutas*/
+#absoluta {
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+}
+section {
+  font-size: 10px;
+}
+/*medidas relativas*/
+/*rem al elemento root del padre*/
+#relativa {
+  width: 2rem;
+  font-size: 2rem;
+}
+/*    */
+#relativa2 {
+  width: 2em;
+}
+.relativa3 {
+  background-color: darkgray;
+  width: 100vw;
+  color: black;
+  height: 100vw;
+}
+#min {
+  width: 100%;
+  min-height: 100px;
+  max-height: 250px;
+  background-color: pink;
+}
+#min-2 {
+  height: 300px;
+  width: 100%;
+}
+.box {
+  width: 33%;
+  float: left;
+  height: 50px;
+  background-color: yellow;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.box:hover::before {
+  position: absolute;
+  top: 50px;
+  width: 150px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  content: " ";
+}
+#avatar {
+  width: 90px;
+}
+#avatar:hover {
+  display: none;
+}
+#main-avatar {
+  min-height: 156px;
+}
+.tipos {
+  background-color: greenyellow;
+  /*position: absolute;
+  top: 0px;
+  left: 250px;*/
+}
+#menu {
+  position: fixed;
+  top: 0px;
+}
+#main-position {
+  margin-top: 150px;
+}
+#sticky {
+  /* bottom: 0px;*/
+  position: sticky;
+}

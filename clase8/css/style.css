@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(29, 126, 42, 0.74);
+  margin: 0px;
+  padding: 50px;
+}
+nav {
+  padding: 5% 5%;
+}
+ul {
+  list-style: none;
+  width: 39%;
+  /*background-color: white;*/
+  float: left;
+}
+.width-div {
+  height: 70px;
+  width: 20%;
+  float: left;
+}
+li {
+  display: inline;
+}
+li a {
+  color: white;
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  margin: 0px 15px;
+  padding: 15px;
+}
+main {
+  background-color: azure;
+}
+#uno {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+}
+/*article{
+    background-color: black;
+}*/

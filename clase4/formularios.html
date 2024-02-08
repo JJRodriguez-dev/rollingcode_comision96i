@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Tablas</a></li>
+          <li><a href="./formularios.html" target="_blank">Formularios</a></li>
+        </ul>
+      </nav>
+      <h1>Formularios</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Extructura del formulario</h2>
+        <article>
+          <h2>Elementos del formulario</h2>
+          <ul>
+            <!--Etiqueta Principal-->
+            <li>form</li>
+            <!--Agrupamos los elementos-->
+            <li>div</li>
+            <!--Etiqueta de texto-->
+            <li>label</li>
+            <!--Etiqueta de entrada de texto-->
+            <li>input</li>
+            <!--Boton para enviar los datos-->
+            <li>input</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Ejemplo de formulario de registro</h2>
+          <!--Action es donde vamos a enviar los datos del form-->
+          <!--por defecto el metodo del formulario es de tipo get-->
+          <!--query string ?usuario=luisNavasArg&email=lpinavas%40gmail.com&password=123456-->
+          <form action="./registro.html" method="get">
+            <div>
+              <label for="usuario">usuario</label>
+              <!--tipo de input nombre para la query string relacionar el label con el input-->
+              <input type="text" name="usuario" id="usuario" required />
+            </div>
+            <div>
+              <label for="email">correo</label>
+              <!--required para evitar enviar campos vacios-->
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label for="password">contraseña</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div>
+              <label for="telefono">Telefono</label>
+              <input type="tel" name="telefono" id="telefono" required />
+            </div>
+            <div>
+              <h3>Ejemplos de tipos de input</h3>
+              <div>
+                <input type="button" value="Miboton" />
+              </div>
+              <!--Tipos de input-->
+              <div>
+                <h3>Selecciona tus preferencias</h3>
+                <label for="check">Deporte</label>
+                <input type="checkbox" name="check" value="deporte" />
+                <label for="check">Viajar</label>
+                <input type="checkbox" name="check" value="viajar" />
+                <label for="check">Cantar</label>
+                <input type="checkbox" name="check" value="cantar" />
+                <label for="check">Visitar nuevos lugares</label>
+                <input type="checkbox" name="check" value="visitar" />
+              </div>
+            </div>
+            <div>
+              <h3>Cuál es tu favorito</h3>
+              <label for="messi">Messi</label>
+              <input type="radio" name="favorito" value="messi" />
+              <label for="dibu">Dibu</label>
+              <input type="radio" name="favorito" value="dibu" />
+              <label for="fideo">Fideo</label>
+              <input type="radio" name="favorito" value="fideo" />
+              <label for="diego">Diego</label>
+              <input type="radio" name="favorito" value="diego" />
+            </div>
+            <input type="submit" value="Registrarse" />
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
